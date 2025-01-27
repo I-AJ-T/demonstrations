@@ -1,0 +1,68 @@
+/* a "*" is a universal selector 
+* {
+    color: darkgreen;
+}*/
+
+/*These are type selectors*/
+body {
+    /*color values are between 0 - 255*/
+    color: rgb(41, 65, 20);
+    background-color: white;
+}
+
+ul {
+    color:#896f0f;
+}
+
+q {
+    /*color values are between 0 -100%*/
+    color: rgb(115%, 59%, 170%);
+    /*another way to style fonts*/
+    /* style weight variant family*/
+    font: italic 200 2em Arial
+}
+
+h1 {
+    /*Needs a horizontal offset, vertical offset, blur radius, shadow color*/
+    text-shadow: 5px 5px 2px yellow;
+}
+
+h2 {
+    /*rgba has an alpha value at the end for transparency*/
+    color: rgba(255, 0, 0, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-variant: small-caps;
+}
+
+p {
+    line-height: 2.5em;
+    font-size: 110%;
+    /*text-indent: 2em;*/
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+/*ID Selectors always start with a "#" followed by its unique set ID. Only works for one element*/
+#git_header {
+    /*can also use hexidecimal to represent colors*/
+    color: #e34c32;
+}
+
+#assignment {
+    /*helps align or format text around images*/
+    clear: left;
+}
+
+/*Class Selectors always start with a "." and are like IDs but work for multiple elements*/
+.first_text {
+    color: teal;
+}
+
+img {
+    /*makes the text go to the side of images*/
+    float: left;
+    /*adds a buffer space to separate the image and the text*/
+    margin-right: 1em;
+}
