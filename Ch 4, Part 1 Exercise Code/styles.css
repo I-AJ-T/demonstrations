@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: red;
+}
+#link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*
+.spacing {
+    line-height: 2em;
+}
+*/
+
+/*spacing is the class set for these elements. But this is another way to do the same thing*/
+ul,ol {
+    line-height: 2em;
+}
+
+#linz {
+    color: rgb(5, 50, 5);
+}
