@@ -1,3 +1,7 @@
+:root {
+    --purple_color:rgb(179, 0, 255);
+}
+
 /* a "*" is a universal selector 
 * {
     color: darkgreen;
@@ -22,18 +26,20 @@ q {
     font: italic 200 2em Arial
 }
 
+/*
 h1 {
-    /*Needs a horizontal offset, vertical offset, blur radius, shadow color*/
+    /*Needs a horizontal offset, vertical offset, blur radius, shadow color
     text-shadow: 5px 5px 2px yellow;
 }
 
 h2 {
-    /*rgba has an alpha value at the end for transparency*/
+    /*rgba has an alpha value at the end for transparency
     color: rgba(255, 0, 0, 1);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
     font-variant: small-caps;
-}
+} 
+*/
 
 p {
     line-height: 2.5em;
@@ -44,25 +50,52 @@ p {
 
 }
 
-/*ID Selectors always start with a "#" followed by its unique set ID. Only works for one element*/
+/*ID Selectors always start with a "#" followed by its unique set ID. Only works for one element
 #git_header {
-    /*can also use hexidecimal to represent colors*/
+    /*can also use hexidecimal to represent colors
     color: #e34c32;
 }
+*/
 
 #assignment {
     /*helps align or format text around images*/
     clear: left;
 }
 
-/*Class Selectors always start with a "." and are like IDs but work for multiple elements*/
+/*Class Selectors always start with a "." and are like IDs but work for multiple elements
 .first_text {
     color: teal;
 }
+*/ 
 
 img {
     /*makes the text go to the side of images*/
     float: left;
     /*adds a buffer space to separate the image and the text*/
     margin-right: 1em;
+}
+
+/*Relational Selector*/
+section#final_project>ul {
+    color: var(--purple_color);
+}
+
+/*Descendant Selector*/
+main em {
+    color:rgb(228, 117, 5);
+}
+
+/*Pseudo-Classes*/
+section#final_project a:hover {
+    font-size: 200%;
+    color: red;
+}
+
+section#final_project a:visited {
+    color: rgb(0, 255, 55);
+}
+
+/*Combination Selector*/
+h1, h2, h3 {
+    color: var(--purple_color);
 }
