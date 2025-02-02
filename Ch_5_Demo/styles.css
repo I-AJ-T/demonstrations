@@ -1,0 +1,38 @@
+body {
+    height: 800px;
+    /*background: brown;*/
+    /*background: rgb(255, 251, 0) url("images/yay.png") no-repeat;*/
+    /*background: rgb(255, 251, 0) url("images/yay.png") repeat-y;*/
+    /*background: rgb(255, 251, 0) url("images/yay.png");*/
+    /*background: rgb(255, 251, 0) url("images/DSC04777.JPG") center center;*/
+    background: rgb(255, 251, 0) url("images/DSC04777.JPG") top right;
+}
+
+#red {
+    /*background-color: #ff0000;*/
+    background: linear-gradient(45deg, #ffffff 0%, #ff0000 100%);
+    border: 3px dotted #000000;
+}
+
+#green{
+    /*background-color: #008000;*/
+    background: linear-gradient(120deg, #ffffff 0%, #00cc00 50%, #002400 100%);
+    border: thick outset #000000;
+}
+
+#blue {
+    /*background-color: #0000ff;*/
+    background: linear-gradient(180deg, #ffffff 0%, #0099ff 50%, #000c77 100%);
+    /*border: 0.5em double #000000;*/
+    border: 0.5em ridge #000000;
+}
+
+.box {
+    color: #ffffff;
+    text-align: center;
+    width: 20%;
+    /*height: 20%;*/
+    margin: 1em;
+    padding: 5em 2em;
+    border-radius: 500px;
+}
