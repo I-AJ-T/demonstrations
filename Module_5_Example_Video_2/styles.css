@@ -1,0 +1,40 @@
+img {
+    width: 400px;
+    float: left;
+    margin-right: 2em;
+}
+
+br {
+    clear: left;
+}
+
+#assignments {
+    float: left;
+    width: 450px;
+}
+
+#final_project {
+    float: left;
+    width: 450px;
+}
+
+/*
+#git_header {
+    clear: both;
+}
+*/
+
+#git {
+    float: right;
+    width: 450px;
+}
+
+footer {
+    clear: both;
+}
+
+article {
+    column-count: 5; 
+    column-gap: 35px;
+    column-rule: 2px dotted rgb(4, 0, 255);
+}
