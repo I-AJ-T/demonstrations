@@ -38,3 +38,54 @@ article {
     column-gap: 35px;
     column-rule: 2px dotted rgb(4, 0, 255);
 }
+
+ul.sun {
+    list-style-image: url(images/sun.png);
+}
+
+/*Nav menu*/
+#nav_menu {
+    padding-bottom: 4em;
+    margin: auto;
+    width: 600px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+}
+
+#nav_menu ul li {
+    float: left;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(149, 149, 212);
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+#nav_menu ul li a:hover {
+    background-color: red;
+}
+
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+#nav_menu ul li a#lastitem {
+    border-right: none;
+}
+
+#nav_menu ul li a.current {
+    color: #ffff00;
+}
+
+main {
+    clear: left;
+}
