@@ -1,0 +1,152 @@
+img {
+    min-width: 150px;
+    width: 25%;
+    float: left;
+    margin-right: 2em;
+}
+
+br {
+    clear: left;
+}
+
+div#sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#assignments {
+    /*float: left;
+    width: 250px;
+    margin-right: 1em;*/
+    flex-basis: 30%;
+}
+
+#final_project {
+    /*float: left;
+    width: 450px;
+    margin-right: 1em;*/
+    flex-basis: 30%;
+    
+}
+
+/*
+#git_header {
+    clear: both;
+}
+*/
+
+#git {
+    /*float: left;
+    width: 450px;
+    margin-left: 1em;*/
+    flex-basis: 30%;
+}
+
+footer {
+    clear: both;
+}
+
+article {
+    column-count: 5; 
+    column-gap: 35px;
+    column-rule: 2px dotted rgb(4, 0, 255);
+}
+
+ul.sun {
+    list-style-image: url(images/sun.png);
+}
+
+/*Nav menu*/
+#nav_menu {
+    padding-bottom: 4em;
+    margin: auto;
+    width: 100%;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav_menu ul li {
+    /*float: left;
+    width: 33%;*/
+    flex-basis: 33%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: rgb(149, 149, 212);
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+
+#nav_menu ul li a:hover {
+    background-color: red;
+}
+
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+#nav_menu ul li a#lastitem {
+    border-right: none;
+}
+
+#nav_menu ul li a.current {
+    color: #ffff00;
+}
+
+main {
+    clear: left;
+}
+
+#top {
+    clear: both;
+}
+
+/*RWD*/
+body {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Note for images*/
+exampleimage {
+    align-self: center;
+    /*This fixes the stretching of an image using flex boxes*/
+}
+
+/*Media Queries Should always be at the bottom*/
+@media only screen and (max-width: 630px) {
+    #nav_menu ul li {
+        /*float: none;
+        width: 100%;*/
+        flex-direction: column;
+    }
+
+    #nav_menu ul {
+        flex-direction: column;
+    }
+
+    #nav_menu ul li a {
+      border-bottom: 2px solid white;
+    }
+    
+    #nav_menu ul li a.lastitem {
+        border-bottom: none;
+    }
+
+    div#sections {
+        flex-direction: column;
+        align-items: center;
+    }
+}

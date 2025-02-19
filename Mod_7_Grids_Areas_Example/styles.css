@@ -1,0 +1,66 @@
+div {
+    color: white;
+    text-align: center;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: Yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#purple {
+    background-color: purple;
+}
+
+main {
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 16px;
+    grid-template-areas: 
+    "red red yel"
+    "org org yel"
+    "grn blu blu"
+    "prp prp prp";
+
+}
+
+#red {
+    grid-area: red;
+}
+
+#orange {
+    grid-area: org;
+}
+
+#yellow {
+    grid-area: yel;
+}
+
+#green {
+    grid-area: grn;
+}
+
+#blue {
+    grid-area: blu;
+}
+
+#purple {
+    grid-area: prp;
+}

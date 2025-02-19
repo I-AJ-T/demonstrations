@@ -1,0 +1,40 @@
+div {
+    color: white;
+    text-align: center;
+}
+
+main {
+    height: 400px;
+    display: grid;
+    /*grid-template: 150px 150px / 200px 200px 200px;*/
+    /*grid-template: repeat(2, 100px) /repeat(3, 300px);*/
+    /*grid-template: repeat(2, 1fr) /repeat(3, 1fr);*/
+    grid-template: repeat(2, 100px) / repeat(auto-fit, minmax(75px, 1fr));
+    grid-gap: 20px 20px;
+    /*align-items: end;
+    justify-items: end;*/
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: Yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#purple {
+    background-color: purple;
+}
